@@ -29,8 +29,9 @@
                     if (file.name.endsWith(".pdf")) {
                         const listItem = document.createElement("li");
                         const fileLink = document.createElement("a");
-                        fileLink.href = file.download_url; // Direct GitHub file link
+                        fileLink.href = `https://raw.githubusercontent.com/${username}/${repo}/${branch}/${folderPath}/${file.name}`;
                         fileLink.textContent = file.name;
+                        fileLink.target = "_blank";  
                         listItem.appendChild(fileLink);
                         fileList.appendChild(listItem);
                     }
