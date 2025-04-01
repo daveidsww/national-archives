@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Library of Ireland - About Us</title>
+    <link rel="stylesheet" href="assets/about.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/navbar+footer.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon-gov.png">
+</head>
+<body>
+    <!-- Topbar (navigation) -->
+    <header>
+        <div class="topbar">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Harp_of_the_Irish_Government.png">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Archives.html">Archives</a></li>
+                    <li><a href="About-us.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header class="secondary">
+        <div class="header-content">
+            <h1>About Us</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-us">
+            <h2>Our Mission</h2>
+            <p>The Library’s core mission is to safeguard documents related to civil service appointments, government statements, and other vital historical data that contribute to understanding the functioning of the state.</p>
+        </section>
+
+        <section class="history">
+            <h2>Our History</h2>
+            <p>Officially established in 2025, with the introduction of the <a href=https://docs.google.com/document/d/1QAT_0B1IbkMv3coCKQyDDxDwlXLk-ixRStKHJa9p2gc/edit?usp=sharing target="_blank">National Archives (Amendment) Bill, 2025</a>, the National Library has been providing Ireland with historical records for <span id="timeElapsed"></span>. The inaugural National Librarian, Daveids, was instated on the same day and tasked with the establishment of the Library's organised archival system.</p>
+        </section>
+
+        <section class="what-we-do">
+            <h2>What We Do</h2>
+            <ul>
+                <li><b>Preserve and protect government documents and historical records:</b> We maintain and safeguard vital documents that reflect the operations, decisions, and history of the government and public agencies. This ensures that significant records are protected for future generations, providing a historical repository that reflects the evolution of the state and its institutions.</li>
+                <li><b>Digitize and provide online access to a portion of our collection:</b> Through our ongoing digitization efforts, we make significant portions of our collection available online, ensuring that a wider audience can access these important records. This initiative also allows for the protection of sensitive information, ensuring it is safeguarded while being accessible to the public.</li>
+                <li><b>Support transparency and accountability in governance:</b> By securely housing and making accessible official government records, we promote openness in how the government operates. Our efforts ensure that these documents are available for scrutiny, reinforcing the principles of transparency and accountability in public administration.</li>
+                <li><b>Collaborate with government bodies to transfer and preserve official records:</b> We work closely with government agencies to ensure the regular transfer of important records and documents to the Library’s custody, ensuring that these materials are preserved and remain accessible to the public.</li>
+            </ul>
+        </section>
+
+    </main>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 National Library of Ireland. <a href="https://www.roblox.com/communities/3033105/IE-Ireland#!/about" target="blank" style="text-decoration: underline; color:inherit;">BunreachtnahEireann's Ireland</a> 
+            <br><i>In no way purporting to be the real <a href="https://nli.ie" target="_blank" style="text-decoration: underline; color:inherit;">National Library of Ireland.</i></p></a>
+    </div>
+</footer>
+
+<script>
+    // Set the start date (example: the National Library started in 1801)
+    const startDate = new Date("April 01, 2025");
+
+    // Function to calculate the time difference
+    function getTimeElapsed(startDate) {
+      const now = new Date();
+      const years = now.getFullYear() - startDate.getFullYear();
+      const months = now.getMonth() - startDate.getMonth();
+      const days = now.getDate() - startDate.getDate();
+      
+      // Adjust months and years if necessary
+      const adjustedMonths = months < 0 ? 12 + months : months;
+      const adjustedYears = months < 0 ? years - 1 : years;
+      
+      return {
+        years: adjustedYears,
+        months: adjustedMonths,
+        days: days < 0 ? new Date(now.getFullYear(), now.getMonth(), 0).getDate() + days : days,
+      };
+    }
+
+    // Function to format the elapsed time
+    function formatTimeElapsed() {
+      const { years, months, days } = getTimeElapsed(startDate);
+      document.getElementById('timeElapsed').textContent = `${years} years, ${months} months, ${days} days`;
+    }
+
+    // Call the function to update the display
+    formatTimeElapsed();
+  </script>
+</body>
+</html>

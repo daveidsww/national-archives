@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'GG Sans';
+    src: url('https://widgets.vendicated.dev/assets/gg-sans-600.woff2') format('woff2');
+}
+
+.user-frame {
+    background-color: #2b2d31;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 435px;
+    color: white;
+    font-family: 'GG Sans', sans-serif;
+}
+
+.profile-pic {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.user-username {
+    font-size: 14px;
+    opacity: 0.75;
+}
+a, a:hover, a:visited, a:active {
+    color: white;
+    text-decoration: none;
+   }

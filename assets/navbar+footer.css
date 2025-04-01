@@ -1,0 +1,108 @@
+/* ===========================
+   RESET STYLES
+   =========================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   GENERAL LAYOUT
+   =========================== */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===========================
+   HEADER STYLES
+   =========================== */
+header {
+    background-color: #004d44;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.topbar .logo img {
+    width: auto;
+    height: 50px;
+}
+.logo {
+    padding-left:20px;
+}
+.secondary {
+    background-color: #00665c;
+    padding-left: 50px;
+    padding-bottom: 60px 0;
+}
+
+/* ===========================
+   NAVIGATION STYLES
+   =========================== */
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+    border-bottom: 2px solid #f0a500;
+}
+
+/* ===========================
+   MAIN CONTENT STYLES
+   =========================== */
+main {
+    flex-grow: 1;
+    flex: 1;
+}
+
+/* ===========================
+   FOOTER STYLES
+   =========================== */
+   footer {
+    width: 100%;
+    background-color: #004f3b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+footer .footer-content {
+    font-size: 0.9rem;
+}
+footer p {
+    font-size: 0.9rem;
+}

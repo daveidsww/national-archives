@@ -1,0 +1,169 @@
+/* ===========================
+   GENERAL STYLES
+   =========================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #004f3b;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* ===========================
+   ABOUT SECTION STYLES
+   =========================== */
+.about {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #004f3b;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.about h2 {
+    font-size: 1.8rem;
+    color: #004f3b;
+    margin-bottom: 10px;
+}
+
+.about ul {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding-left: 40px;
+    list-style-type: disc;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+.person-content p:first-of-type,
+.government-content p:first-of-type {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+/* ===========================
+   KEY PERSONNEL SECTION STYLES
+   =========================== */
+.key-personnel .personnel-container {
+    display: flex;
+    gap: 20px; /* Space between the two sections */
+    justify-content: space-between; /* Distribute space evenly */
+    flex-wrap: nowrap; /* Prevent wrapping to keep them in line */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #004f3b;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.key-personnel .person {
+    display: flex; /* Align photo and text side by side */
+    align-items: flex-start; /* Align items at the top */
+    gap: 15px; /* Space between the photo and text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    flex: 1; /* Allow equal width for both sections */
+    max-width: 48%; /* Prevent them from being too wide */
+}
+
+.key-personnel .person-photo {
+    height: 150px; /* Maintain aspect ratio */
+    object-fit: cover;
+    margin: 0; /* Remove bottom margin */
+}
+
+.key-personnel .person-content {
+    flex: 1; /* Allow the text to take up remaining space */
+}
+
+.key-personnel .person h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #004f3b;
+}
+
+.key-personnel .person p {
+    line-height: 1.6;
+    margin-top: 5px;
+}
+
+/* ===========================
+   CURRENT GOVERNMENT SECTION STYLES
+   =========================== */
+.current-government {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #004f3b;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.current-government h2 {
+    font-size: 1.8rem;
+    color: #004f3b;
+    margin-bottom: 15px;
+}
+
+.current-government p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.government-container {
+    display: flex;
+    gap: 20px; /* Space between the two sections */
+    justify-content: space-between; /* Distribute space evenly */
+    flex-wrap: nowrap; /* Prevent wrapping to keep them in line */
+}
+
+.government-person {
+    display: flex; /* Align photo and text side by side */
+    align-items: flex-start; /* Align items at the top */
+    gap: 15px; /* Space between the photo and text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    flex: 1; /* Allow equal width for both sections */
+    max-width: 48%; /* Prevent them from being too wide */
+}
+
+.government-photo {
+    height: 150px; /* Maintain aspect ratio */
+    object-fit: cover;
+    margin: 0; /* Remove bottom margin */
+}
+
+.government-content {
+    flex: 1; /* Allow the text to take up remaining space */
+}
+
+.government-person h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #004f3b;
+}
+
+.government-person p {
+    line-height: 1.6;
+    margin-top: 5px;
+}
